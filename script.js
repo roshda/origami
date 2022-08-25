@@ -697,6 +697,12 @@ function script(){
                 stagger = 'stagger' in settings ? (parseInt(settings.stagger) / 1000) : false,
                 state = 'state' in settings ? settings.state : null,
                 effect = this.effects[style];
+              if ('CARRD_DISABLE_ANIMATION' in window) {
+                if (style == 'fade-in-background') $$(selector).forEach(function(e) {
+                    e.style.setProperty('--onvisible-background-color', 'rgba(0,0,0,0.001)');
+                });
+                return;
+            }
 
             $$(selector).forEach(function(e) {
                 var children = (stagger !== false) ? e.querySelectorAll(':scope > li, :scope ul > li') : null,
