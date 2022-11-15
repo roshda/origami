@@ -3,6 +3,6 @@
 a collection of my origami projects folded since 2019. 
 
 includes:
-- segmented display with animations
-- faq section
+- sectioned display/collection with animations
+- faq section & math section
 - alternate resources section
