@@ -10,3 +10,5 @@ includes:
 to do:
 - write design tips + community sections
 - embed SAS video aboutmaekawa-justin-kawasaki theorem
+
+feat. bootstrap css
